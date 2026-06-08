@@ -62,21 +62,21 @@ export default function Hero() {
               <p className="text-xs font-mono text-white/35 uppercase tracking-[0.2em] mb-3">
                 Hello, I&apos;m
               </p>
-              <h1 className="text-[clamp(2.8rem,9vw,6rem)] font-bold tracking-tight leading-[0.9] text-white">
+              <h1 className="text-[clamp(2.4rem,8vw,5.5rem)] font-bold tracking-tight leading-[1] text-white pb-1">
                 Harekrishna
               </h1>
-              <h1 className="text-[clamp(2.8rem,9vw,6rem)] font-bold tracking-tight leading-[0.95] text-gradient">
+              <h1 className="text-[clamp(2.4rem,8vw,5.5rem)] font-bold tracking-tight leading-[1.1] text-gradient pb-2">
                 Kakadiya
               </h1>
-              <p className="text-lg md:text-xl text-white/40 font-light mt-2">(Harry)</p>
+              <p className="text-lg md:text-xl text-white/40 font-light mt-1">(Harry)</p>
             </motion.div>
 
             {/* Subheading */}
             <motion.p
               variants={item}
-              className="text-base md:text-lg text-white/55 font-light tracking-wide max-w-md"
+              className="text-base md:text-lg text-white/65 font-light tracking-wide max-w-md"
             >
-              CS @ SFSU&nbsp;&apos;26&nbsp;&nbsp;·&nbsp;&nbsp;Backend Engineer&nbsp;&nbsp;·&nbsp;&nbsp;AI Developer
+              CS @ SFSU &apos;26 | Backend &amp; AI 🚀
             </motion.p>
 
             {/* Quote */}
@@ -141,7 +141,8 @@ export default function Hero() {
                   src="/profile.jpg"
                   alt="Harekrishna Kakadiya"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
+                  style={{ objectPosition: "center 15%" }}
                   priority
                 />
               </div>

@@ -1,14 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-
-const stats = [
-  { label: "Projects Built", value: "4+" },
-  { label: "Years Coding", value: "3+" },
-  { label: "Team Size Led", value: "5" },
-  { label: "Cloud Deploys", value: "3+" },
-];
+import { motion } from "framer-motion";
 
 function fadeUp(delay = 0) {
   return {
@@ -20,11 +12,8 @@ function fadeUp(delay = 0) {
 }
 
 export default function About() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-
   return (
-    <section id="about" className="py-32 px-6 border-t border-white/[0.05]">
+    <section id="about" className="py-32 px-6 border-t border-white/[0.06]">
       <div className="max-w-6xl mx-auto">
         <motion.div {...fadeUp(0)}>
           <p className="text-[11px] font-mono text-indigo-400/60 uppercase tracking-[0.2em] mb-3">
@@ -35,67 +24,22 @@ export default function About() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-5 gap-12 lg:gap-20 items-start">
-          {/* Bio text */}
-          <motion.div {...fadeUp(0.1)} className="md:col-span-3 space-y-5">
-            <p className="text-white/55 leading-[1.8] text-base">
-              I&apos;m a Computer Science student at{" "}
-              <span className="text-white font-medium">
-                San Francisco State University
-              </span>{" "}
-              graduating in 2026, with a focus on{" "}
-              <span className="text-white font-medium">backend engineering</span>,
-              distributed systems, and cloud infrastructure.
-            </p>
-            <p className="text-white/55 leading-[1.8] text-base">
-              I enjoy building systems that scale — from real-time APIs backed by
-              Socket.io and geospatial databases with PostGIS, to AI-powered
-              applications using multi-agent architectures and LLMs. I care deeply
-              about reliability, performance, and clean system design.
-            </p>
-            <p className="text-white/55 leading-[1.8] text-base">
-              Outside of engineering, I lead the ISA Events team at SFSU and serve
-              as an Orientation Leader — building community and helping students find
-              their footing on campus.
-            </p>
-
-            {/* Tech highlights */}
-            <div className="pt-2 flex flex-wrap gap-2">
-              {["Node.js", "TypeScript", "PostgreSQL", "AWS", "Socket.io", "LLMs"].map(
-                (t) => (
-                  <span
-                    key={t}
-                    className="text-xs font-mono px-2.5 py-1 rounded border border-white/[0.07] text-white/35 bg-white/[0.02]"
-                  >
-                    {t}
-                  </span>
-                )
-              )}
-            </div>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            {...fadeUp(0.2)}
-            className="md:col-span-2 grid grid-cols-2 gap-3"
-            ref={ref}
-          >
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.5, delay: 0.3 + i * 0.08 }}
-                className="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/[0.1] transition-all"
-              >
-                <p className="text-3xl font-bold text-white mb-1 tracking-tight">
-                  {stat.value}
-                </p>
-                <p className="text-xs text-white/35 leading-tight">{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+        <motion.div {...fadeUp(0.1)} className="max-w-3xl space-y-5">
+          <p className="text-white/65 leading-[1.85] text-base md:text-lg">
+            I am a Computer Science student who enjoys learning and growing in the tech field.
+            I have really enjoyed everything I have studied so far, and it has made me excited
+            about the possibilities this field offers.
+          </p>
+          <p className="text-white/65 leading-[1.85] text-base md:text-lg">
+            I believe that hard work and consistency are the keys to success, which is why I
+            always try to give my best in everything I do. I like challenging myself and staying
+            focused on improving both personally and academically.
+          </p>
+          <p className="text-white/65 leading-[1.85] text-base md:text-lg">
+            I enjoy meeting new people and building meaningful connections with others who share
+            the same drive and mindset.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

@@ -48,7 +48,6 @@ export default function Navigation() {
             href="#"
             className="font-mono text-sm text-white/50 hover:text-white transition-colors tracking-tight"
           >
-            hk<span className="text-white/20">.</span>dev
           </a>
 
           <div className="hidden md:flex items-center gap-8">

@@ -35,7 +35,7 @@ export default function Contact() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
-          <p className="text-[11px] font-mono text-white/25 uppercase tracking-[0.2em] mb-3">
+          <p className="text-[11px] font-mono text-indigo-400/60 uppercase tracking-[0.2em] mb-3">
             05 — Contact
           </p>
         </motion.div>

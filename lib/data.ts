@@ -6,6 +6,7 @@ export interface Project {
   liveUrl: string | null;
   githubUrl: string | null;
   accent: string;
+  imageUrl?: string;
 }
 
 export interface ExperienceItem {
@@ -17,7 +18,7 @@ export interface ExperienceItem {
 }
 
 export const skills: Record<string, string[]> = {
-  Languages: ["Java", "JavaScript", "TypeScript", "SQL", "C"],
+  Languages: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "C"],
   Backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "PostgreSQL", "PostGIS", "MongoDB"],
   "Cloud & DevOps": ["AWS", "Docker", "Git", "GitHub", "Vercel", "Nginx", "PM2", "CI/CD", "Linux", "Jest", "Postman"],
   AI: ["LLMs", "Claude", "Anthropic API", "Prompt Engineering", "Stable Diffusion"],
@@ -40,6 +41,7 @@ export const projects: Project[] = [
     liveUrl: "https://vibe-check-sepia.vercel.app/",
     githubUrl: null,
     accent: "#4ade80",
+    imageUrl: "https://api.microlink.io/?url=https%3A%2F%2Fvibe-check-sepia.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
     title: "Texas Hold'em Poker II",
@@ -56,6 +58,7 @@ export const projects: Project[] = [
     liveUrl: "https://term-project-baxter-hirpara-kakadiya-iwpj.onrender.com/",
     githubUrl: null,
     accent: "#60a5fa",
+    imageUrl: "https://api.microlink.io/?url=https%3A%2F%2Fterm-project-baxter-hirpara-kakadiya-iwpj.onrender.com%2F&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
     title: "Orbital Debris Tracker",
@@ -68,9 +71,10 @@ export const projects: Project[] = [
       "Space technology domain",
     ],
     tech: ["Python", "Anthropic API", "React"],
-    liveUrl: null,
+    liveUrl: "https://orbital-debris-tracker-client.vercel.app/",
     githubUrl: null,
     accent: "#a78bfa",
+    imageUrl: "https://api.microlink.io/?url=https%3A%2F%2Forbital-debris-tracker-client.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
     title: "AI Dungeon Master",

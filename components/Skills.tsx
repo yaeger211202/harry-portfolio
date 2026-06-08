@@ -20,7 +20,7 @@ export default function Skills() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
-          <p className="text-[11px] font-mono text-white/25 uppercase tracking-[0.2em] mb-3">
+          <p className="text-[11px] font-mono text-indigo-400/60 uppercase tracking-[0.2em] mb-3">
             02 — Skills
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 tracking-tight">

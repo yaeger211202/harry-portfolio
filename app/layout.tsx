@@ -55,7 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
+        style={{ background: "#070b14" }}
       >
         {children}
       </body>

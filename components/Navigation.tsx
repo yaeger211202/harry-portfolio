@@ -8,7 +8,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "Leadership" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -56,17 +56,11 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-white/40 hover:text-white transition-colors"
+                className="text-sm text-white/60 hover:text-white transition-colors"
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="mailto:h.kakadiya@sfsu.edu"
-              className="text-sm px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-white/90 transition-colors"
-            >
-              Hire Me
-            </a>
           </div>
 
           <button
@@ -102,17 +96,6 @@ export default function Navigation() {
                 {link.label}
               </motion.a>
             ))}
-            <motion.a
-              href="mailto:h.kakadiya@sfsu.edu"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ delay: navLinks.length * 0.06 + 0.05, duration: 0.3 }}
-              className="mt-4 text-sm px-6 py-3 bg-white text-black rounded-xl font-medium"
-              onClick={() => setMobileOpen(false)}
-            >
-              Hire Me
-            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

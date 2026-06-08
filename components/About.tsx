@@ -27,7 +27,7 @@ export default function About() {
     <section id="about" className="py-32 px-6 border-t border-white/[0.05]">
       <div className="max-w-6xl mx-auto">
         <motion.div {...fadeUp(0)}>
-          <p className="text-[11px] font-mono text-white/25 uppercase tracking-[0.2em] mb-3">
+          <p className="text-[11px] font-mono text-indigo-400/60 uppercase tracking-[0.2em] mb-3">
             01 — About
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 tracking-tight">
